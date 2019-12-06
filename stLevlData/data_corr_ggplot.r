@@ -16,3 +16,5 @@ ggplot(dat1, aes(x=ATFRegWeapon, y=AllMortAdj)) +
  # facet_grid(.~ 'state level data')+
  # geom_smooth(method=lm, se=FALSE, fullrange=TRUE) +
  # theme(strip.text = element_text(size=15))
+
+ #r2 = round(summary(x)$r.squared, digits = 2)
