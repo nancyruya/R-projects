@@ -22,7 +22,7 @@ ggplot(dat1, aes(x=ATFRegWeapon, y=AllMortAdj)) +
 fit <- lm(AllMortAdj ~ ATFRegWeapon + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
 summary(fit)
 
-Multiple regression model with two continuous predictor variables with or without interaction
+# Multiple regression model with two continuous predictor variables with or without interaction
 fit3=lm(AllMortAdj~ATFRegWeapon*Poverty,data=dat1)
 summary(fit3)
 ggplot(dat1,aes(y=AllMortAdj,x=ATFRegWeapon,color=Poverty))+geom_point()+stat_smooth(method="lm",se=FALSE)
