@@ -21,12 +21,156 @@ ggplot(dat1, aes(x=ATFRegWeapon, y=AllMortAdj)) +
 
 
 # Multiple regression model with two continuous predictor variables with or without interaction
-fit1=lm(AllMortAdj~ATFRegWeapon*Poverty,data=dat1)
-summary(fit1)
-ggplot(dat1,aes(y=AllMortAdj,x=ATFRegWeapon,color=Poverty))+geom_point()+stat_smooth(method="lm",se=FALSE)
+  #fit1=lm(AllMortAdj~ATFRegWeapon*Poverty,data=dat1)
+  #summary(fit1)
+  #ggplot(dat1,aes(y=AllMortAdj,x=ATFRegWeapon,color=Poverty))+geom_point()+stat_smooth(method="lm",se=FALSE)
 
-> fit <- lm(AllMortAdj ~ ATFRegWeapon + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+fit <- lm(AllMortAdj ~ ATFRegWeapon , data=dat1)
+summary(fit)
+fit <- lm(AllMortAdj ~ ATFFirearmLicense , data=dat1)
+summary(fit)
+fit <- lm(AllMortAdj ~ GiffordsRank , data=dat1)
+summary(fit)
+fit <- lm(AllMortAdj ~ GOwnerRates , data=dat1)
+summary(fit)
+
+-----------------------------
+> fit <- lm(AllMortAdj ~ ATFRegWeapon , data=dat1)
 > summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ ATFRegWeapon, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8722 -2.4915 -0.3034  3.2527  7.8801 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.102e+01  8.107e-01  13.597   <2e-16 ***
+ATFRegWeapon 4.484e-06  8.273e-06   0.542     0.59    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.044 on 48 degrees of freedom
+Multiple R-squared:  0.006082,	Adjusted R-squared:  -0.01462 
+F-statistic: 0.2937 on 1 and 48 DF,  p-value: 0.5903
+
+# All firearm mortality and ATF Registered Weapons
+# R-squared:  0.006; p-value: 0.5903 not significant. We do not reject null hypothesis.
+
+-----------------------------
+> fit <- lm(AllMortAdj ~ ATFFirearmLicense , data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ ATFFirearmLicense, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.0111 -2.3414 -0.1717  3.1680  7.6996 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       11.5146774  0.9500578  12.120 3.25e-16 ***
+ATFFirearmLicense -0.0000694  0.0002916  -0.238    0.813    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.054 on 48 degrees of freedom
+Multiple R-squared:  0.001178,	Adjusted R-squared:  -0.01963 
+F-statistic: 0.05663 on 1 and 48 DF,  p-value: 0.8129
+
+# All firearm mortality and ATF Federal Firearm Licensees
+# R-squared:  0.001; p-value: 0.8129 not significant. 
+-----------------------------
+> fit <- lm(AllMortAdj ~ GiffordsRank , data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ GiffordsRank, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2683 -2.0268  0.2815  1.8915  6.8215 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   6.35999    0.82155   7.741 5.43e-10 ***
+GiffordsRank  0.19662    0.02826   6.958 8.53e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.862 on 48 degrees of freedom
+Multiple R-squared:  0.5021,	Adjusted R-squared:  0.4918 
+F-statistic: 48.41 on 1 and 48 DF,  p-value: 8.53e-09
+
+# All firearm mortality and Giffords Center Rankings
+# R-squared:  0.502; p-value: 8.53e-09 significant. 
+# Giffords Center Rankings explain 50.2% of the variability in All Firearm Mortality. We reject null hypothesis.
+-----------------------------
+> fit <- lm(AllMortAdj ~ GOwnerRates , data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ GOwnerRates, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9.8750 -1.2806  0.1723  1.6976  5.4270 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.60698    1.11315   4.139  0.00014 ***
+GOwnerRates  0.20328    0.03118   6.520 4.01e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.954 on 48 degrees of freedom
+Multiple R-squared:  0.4697,	Adjusted R-squared:  0.4586 
+F-statistic: 42.51 on 1 and 48 DF,  p-value: 4.005e-08
+
+# All firearm mortality and Gun Ownership rates
+# R-squared:  0.469; p-value: 4.005e-08 significant. 
+# Gun Ownership rates explain 46.97% of the variability in All Firearm Mortality. We reject null hypothesis. 
+
+-----------------------------
+fit <- lm(AllMortAdj ~ GiffordsRank + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+summary(fit)
+> fit <- lm(AllMortAdj ~ GiffordsRank + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ GiffordsRank + Poverty + Unemploy + 
+    PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data = dat1)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.813 -1.426 -0.241  1.654  5.706 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -6.163e+03  7.634e+03  -0.807    0.424    
+GiffordsRank  1.607e-01  3.503e-02   4.588    4e-05 ***
+Poverty       3.341e-01  2.145e-01   1.557    0.127    
+Unemploy      4.286e-01  3.949e-01   1.085    0.284    
+PoorMH0       6.159e+01  7.633e+01   0.807    0.424    
+PoorMH14ls    6.166e+01  7.638e+01   0.807    0.424    
+PoorMH14gt    6.181e+01  7.633e+01   0.810    0.423    
+StPoP        -5.192e-08  6.413e-08  -0.810    0.423    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.572 on 42 degrees of freedom
+Multiple R-squared:  0.6483,	Adjusted R-squared:  0.5897 
+F-statistic: 11.06 on 7 and 42 DF,  p-value: 7.866e-08
+
+# R-squared:  0.6483; 
+
+
+-----------------------------
+fit <- lm(AllMortAdj ~ ATFRegWeapon + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+summary(fit)
 
 Call:
 lm(formula = AllMortAdj ~ ATFRegWeapon + Poverty + Unemploy + 
@@ -59,7 +203,7 @@ F-statistic: 8.339 on 7 and 42 DF,  p-value: 2.356e-06
 # explain 58.15% of the variability in All Firearm Mortality.
 # Significant p-value: ATFRegWeapon (p-value = 0.189), Poverty (p-value = 0.013), StPop (p-value = 0.012)
 
-
+-----------------------------
 > fit <- lm(AllMortAdj ~ ATFRegWeapon + Poverty + StPoP, data=dat1)
 > summary(fit)
 
@@ -89,6 +233,6 @@ F-statistic: 20.16 on 3 and 46 DF,  p-value: 1.74e-08
 # variability in All Firearm Mortality.
 # Main Effects Hypothesis
 # When testing the null hypothesis that there is linear association between All Firearm Morality and ATF Registered Weapons
-# after adjusting for poverty and statewide population, we reject the null hypothesis (t = 3.405, df = 46, p-value = 0.138).
+# after adjusting for poverty and statewide population, we reject the null hypothesis (t = 3.405, df = 46, p-value = 0.00138).
 # for a one unit change in ATF Registered Weapons, on average, the All Firearm Mortality increases by 3.3e-05, after adjusting
 # for poverty and statewide population.
