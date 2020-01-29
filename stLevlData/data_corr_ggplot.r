@@ -236,3 +236,90 @@ F-statistic: 20.16 on 3 and 46 DF,  p-value: 1.74e-08
 # after adjusting for poverty and statewide population, we reject the null hypothesis (t = 3.405, df = 46, p-value = 0.00138).
 # for a one unit change in ATF Registered Weapons, on average, the All Firearm Mortality increases by 3.3e-05, after adjusting
 # for poverty and statewide population.
+
+
+
+
+> fit <- lm(AllMortAdj ~ ATFFirearmLicense + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ ATFFirearmLicense + Poverty + Unemploy + 
+    PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.1004 -1.6484  0.0184  1.0667 10.1337 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -7.615e+03  9.175e+03  -0.830 0.411295    
+ATFFirearmLicense  6.471e-04  4.851e-04   1.334 0.189378    
+Poverty            8.250e-01  2.205e-01   3.741 0.000549 ***
+Unemploy           1.549e-04  4.586e-01   0.000 0.999732    
+PoorMH0            7.612e+01  9.174e+01   0.830 0.411363    
+PoorMH14ls         7.620e+01  9.180e+01   0.830 0.411211    
+PoorMH14gt         7.621e+01  9.174e+01   0.831 0.410854    
+StPoP             -3.356e-07  1.428e-07  -2.349 0.023592 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.086 on 42 degrees of freedom
+Multiple R-squared:  0.4935,	Adjusted R-squared:  0.4091 
+F-statistic: 5.846 on 7 and 42 DF,  p-value: 8.928e-05
+
+> fit <- lm(AllMortAdj ~ GiffordsRank + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ GiffordsRank + Poverty + Unemploy + 
+    PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data = dat1)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.813 -1.426 -0.241  1.654  5.706 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -6.163e+03  7.634e+03  -0.807    0.424    
+GiffordsRank  1.607e-01  3.503e-02   4.588    4e-05 ***
+Poverty       3.341e-01  2.145e-01   1.557    0.127    
+Unemploy      4.286e-01  3.949e-01   1.085    0.284    
+PoorMH0       6.159e+01  7.633e+01   0.807    0.424    
+PoorMH14ls    6.166e+01  7.638e+01   0.807    0.424    
+PoorMH14gt    6.181e+01  7.633e+01   0.810    0.423    
+StPoP        -5.192e-08  6.413e-08  -0.810    0.423    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.572 on 42 degrees of freedom
+Multiple R-squared:  0.6483,	Adjusted R-squared:  0.5897 
+F-statistic: 11.06 on 7 and 42 DF,  p-value: 7.866e-08
+
+> fit <- lm(AllMortAdj ~ GOwnerRates + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ GOwnerRates + Poverty + Unemploy + 
+    PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.2809 -1.3044  0.3207  1.6842  4.6360 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -6.994e+03  7.501e+03  -0.932   0.3564    
+GOwnerRates  1.578e-01  3.283e-02   4.808 1.98e-05 ***
+Poverty      3.719e-01  2.055e-01   1.809   0.0775 .  
+Unemploy     3.486e-01  3.837e-01   0.908   0.3688    
+PoorMH0      6.991e+01  7.499e+01   0.932   0.3566    
+PoorMH14ls   6.986e+01  7.505e+01   0.931   0.3573    
+PoorMH14gt   7.019e+01  7.499e+01   0.936   0.3546    
+StPoP       -7.403e-08  6.116e-08  -1.210   0.2329    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.531 on 42 degrees of freedom
+Multiple R-squared:  0.6594,	Adjusted R-squared:  0.6027 
+F-statistic: 11.62 on 7 and 42 DF,  p-value: 4.167e-08
