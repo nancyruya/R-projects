@@ -268,6 +268,37 @@ Residual standard error: 3.086 on 42 degrees of freedom
 Multiple R-squared:  0.4935,	Adjusted R-squared:  0.4091 
 F-statistic: 5.846 on 7 and 42 DF,  p-value: 8.928e-05
 
+
+> fit <- lm(AllMortAdj ~ ATFFirearmLicense + Poverty + StPoP, data=dat1)
+> summary(fit)
+
+Call:
+lm(formula = AllMortAdj ~ ATFFirearmLicense + Poverty + StPoP, 
+    data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.9851 -1.6196  0.0009  1.0945 10.1478 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -3.184e-01  2.045e+00  -0.156  0.87693    
+ATFFirearmLicense  6.922e-04  4.583e-04   1.510  0.13783    
+Poverty            8.382e-01  1.436e-01   5.837 5.07e-07 ***
+StPoP             -3.477e-07  1.287e-07  -2.702  0.00962 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.975 on 46 degrees of freedom
+Multiple R-squared:  0.4846,	Adjusted R-squared:  0.451 
+F-statistic: 14.42 on 3 and 46 DF,  p-value: 9.347e-07
+
+
+
+
+
+
+
 > fit <- lm(AllMortAdj ~ GiffordsRank + Poverty + Unemploy + PoorMH0 + PoorMH14ls + PoorMH14gt + StPoP, data=dat1)
 > summary(fit)
 
