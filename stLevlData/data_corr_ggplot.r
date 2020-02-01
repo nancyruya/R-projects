@@ -34,6 +34,14 @@ summary(fit)
 fit <- lm(AllMortAdj ~ GOwnerRates , data=dat1)
 summary(fit)
 
+
+
+#Beta Coefficient
+install.packages("QuantPsyc")
+library(QuantPsyc)
+lm.beta(fit)
+
+
 -----------------------------
 > fit <- lm(AllMortAdj ~ ATFRegWeapon , data=dat1)
 > summary(fit)
