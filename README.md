@@ -8,7 +8,9 @@ Partison outcome
 2nd graph: look at the difference between two value using box plot
 Box plot compare really republican and really democrats
 Moderate rebulican and moderate democrats
+
 2. Firearm Mortality
+
 3. Geographically Weighted Regression
 
 # Linear Regression
