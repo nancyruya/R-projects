@@ -1,14 +1,14 @@
 # R-projects with Dr. Liu
 
 1. Partnership project with Dr. Coakley looking for associations between political partisanship, at the state level, and differences in measures of pediatric health and safety
-2. State-Level Partisanship Strongly Correlates with Health Outcomes for US Children
+- State-Level Partisanship Strongly Correlates with Health Outcomes for US Children
 Partison outcome
 
 1st graph: regression, show each variable and its beta coef and p-value (ASC)
 2nd graph: look at the difference between two value using box plot
 Box plot compare really republican and really democrats
 Moderate rebulican and moderate democrats
-
+2. Firearm Mortality
 3. Geographically Weighted Regression
 
 # Linear Regression
