@@ -1,6 +1,6 @@
 # R-projects with Dr. Liu
 
-1. Partnership project with Dr. Coakley looking for associations between political partisanship, at the state level, and differences in measures of pediatric health and safety
+1. Partnership project with Dr. Coakley and his medical student Megan looking for associations between political partisanship, at the state level, and differences in measures of pediatric health and safety
 - State-Level Partisanship Strongly Correlates with Health Outcomes for US Children
 Partison outcome
 
@@ -9,7 +9,7 @@ Partison outcome
 Box plot compare really republican and really democrats
 Moderate rebulican and moderate democrats
 
-2. Firearm Mortality
+2. Partnership project with Dr. Coakley and his medical student Amanda looking at Firearm Mortality
 
 3. Geographically Weighted Regression
 
