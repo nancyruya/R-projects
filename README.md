@@ -13,10 +13,9 @@ Moderate rebulican and moderate democrats
 
 3. Geographically Weighted Regression
 4. Literature review for Covid-19, focusing o studies that use survey(in-person, on-line) to look at different impact of Covid-19.
-
-# https://asreview.readthedocs.io/en/latest/installation.html#macos
-pip install asreview
-asreview oracle
+- https://asreview.readthedocs.io/en/latest/installation.html#macos
+- pip install asreview
+- asreview oracle
 
 # Linear Regression
 http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Correlation-Regression/BS704_Correlation-Regression2.html
