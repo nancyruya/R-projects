@@ -12,18 +12,18 @@ Moderate rebulican and moderate democrats
 2. Partnership project with Dr. Coakley and his medical student Amanda looking at Firearm Mortality
 
 3. Geographically Weighted Regression
-4. Literature review for Covid-19, focusing o studies that use survey(in-person, on-line) to look at different impact of Covid-19.
+4. Literature review for Covid-19, focusing on studies that use survey(in-person, on-line) to look at different impact of Covid-19.
 
 # Covid-19
 https://asreview.readthedocs.io/en/latest/installation.html#macos
-pip install asreview
-asreview oracle
+- pip install asreview
+- asreview oracle
 
 - Observational study web for lit 
--50ish
+- 50ish
 - COrd-19 Explorer web for more lit
 - NLP?
--ASReview: program-python, extract data from review on git hub
+- ASReview: program-python, extract data from review on git hub
 - Study Quality Assessment tool in sinai box
 - think of criteria/ CORD-19 dataset
 - pages.semanticscholar.org/coronavirus-research
