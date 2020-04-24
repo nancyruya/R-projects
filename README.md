@@ -31,6 +31,10 @@ https://asreview.readthedocs.io/en/latest/installation.html#macos
 - prority is the survey study, look at impact, any publicable impact?
 - knowledge, attitute, mental health, guidelines, how practice social distancing?
 
+- Group the 300is paper and narrow done
+- Look at Mortality rate among cancer pt, clinical characterastic/ICU admition rate, % of recory, how many ventilator used, length of stay, or other aspect of cancer. 
+- Maybe use 15 papers, or maybe look at medication?
+
 
 # Linear Regression
 http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Correlation-Regression/BS704_Correlation-Regression2.html
