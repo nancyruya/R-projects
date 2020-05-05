@@ -15,26 +15,42 @@ Moderate rebulican and moderate democrats
 4. Literature review for Covid-19, focusing on studies that use survey(in-person, on-line) to look at different impact of Covid-19.
 
 # Covid-19
-https://asreview.readthedocs.io/en/latest/installation.html#macos
-- pip install asreview
-- asreview oracle
+> https://asreview.readthedocs.io/en/latest/installation.html#macos
+> pip install asreview
+> asreview oracle
 
-- Observational study web for lit 
-- 50ish
-- COrd-19 Explorer web for more lit
-- NLP?
-- ASReview: program-python, extract data from review on git hub
-- Study Quality Assessment tool in sinai box
-- think of criteria/ CORD-19 dataset
-- pages.semanticscholar.org/coronavirus-research
-- By end of April
-- prority is the survey study, look at impact, any publicable impact?
-- knowledge, attitute, mental health, guidelines, how practice social distancing?
+> Observational study web for lit 
+> 50ish
+> COrd-19 Explorer web for more lit
+> NLP?
+> ASReview: program-python, extract data from review on git hub
+> Study Quality Assessment tool in sinai box
+> think of criteria/ CORD-19 dataset
+> pages.semanticscholar.org/coronavirus-research
+> By end of April
+> prority is the survey study, look at impact, any publicable impact?
+> knowledge, attitute, mental health, guidelines, how practice social distancing?
 
-- Group the 300is paper and narrow done
-- Look at Mortality rate among cancer pt, clinical characterastic/ICU admition rate, % of recory, how many ventilator used, length of stay, or other aspect of cancer. 
-- Maybe use 15 papers, or maybe look at medication?
+> Group the 300is paper and narrow done
+> Look at Mortality rate among cancer pt, clinical characterastic/ICU admition rate, % of recory, how many ventilator used, length of stay, or other aspect of cancer. 
+> Maybe use 15 papers, or maybe look at medication?
 
+> Summarize: How many papers in each different category? Within each category, group subcategory.  
+> Clinic | Case Management | Survey | Treatment
+> Covid in Sinai box？ to read more abstruct and look for more papers; Samantic scholar
+> Focus on Motality and ventilator etc.
+> " focus on
+Studies that reported clinic characteristics of covid on cancer patients. This could be any of the following: Infection rate of SARS-Cov-2, mortality rate, cancer types, cancer treatment, ICU use, discharge status, recovery rate.
+We want to extract these data elements to answer some questions, e.g.
+What are the prevalence of COVID-19 disease among cancer patients?
+What are the COVID-19 disease severity (this could be obtained from their ICU use, mortality, and discharge rate)
+What are the cancer disease severity?
+What are the demographic characteristics of these cancer patients
+Are SARS-Cov-2 infection more prevalent among cancer patients than non-cancer patients?
+What are the risk factors for patients with dual cancer and COVID-19?"
+> We want to draw a conclusion if cancer is more vulnerable? More serious?
+> Management | Opinion maybe put in discussion
+> From high importance to low importance: Clinical -> ... ->  Opinion -> Management
 
 # Linear Regression
 http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Correlation-Regression/BS704_Correlation-Regression2.html
