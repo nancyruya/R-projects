@@ -47,19 +47,10 @@ Case Series: Through two cases of immunocompromised patients with newly diagnose
 
 Results
 Study selection      
-Studies were selected from LitCovid at: https://www.ncbi.nlm.nih.gov/research/coronavirus/ as of the date 4/20/2020. The key word “cancer patient” was typed for initial selection on this website. There were 1796 studies shown from the result. Those papers were downloaded and imported to ASReview for further narrowing down. When reviewing the 1796 papers, the topics and abstracts were reviewed and the papers were categorized as relevant if it is shown as cancer related. Excluded transplant and surgical treatment, solely focused on cancer patients identifiers. After reviewing 1796 studies, there were 132 papers that were actually related to cancer patients and were selected for further detailed review. 
-
-  
-e.g. mental health among student population, which I think there are only handful papers.
+Studies were selected from LitCovid at: https://www.ncbi.nlm.nih.gov/research/coronavirus/ as of the date 4/20/2020. The key word “cancer patient” was typed for initial search on this website. There were 1796 studies shown from the result on LitCovid. Those papers were downloaded and imported to ASReview for further narrowing down. When reviewing the 1796 papers, the topics and abstracts were reviewed and the papers were categorized as relevant papers if it is shown as cancer related. Excluded transplant and surgical treatment, solely focused on cancer patients identifiers through narrowing down process. After reviewing 1796 studies, there were 132 papers that were actually related to cancer patients and were selected for further detailed review. 
  
-
 Study characteristics
-Countries,
-Insight: 162, 322, 1223, 1580, 218，58, 60, 120, 171, 218, 341,  381, 381, 463, 519, 541, 580, 676, 
-Guideline: 172, 254, 259,  579, 593, 692, 
-Management: 954, 1221, 1391, 17, 61, 83,  87, 110, 215, 217, 382, 398, 440, 441, 462, 565, 611, 616, 634, 645, 668, 722, 
-Lit Review: 1179, 338, 340
-Recommendation: 362, 364
+The studies within the 132 selected papers. Population is patients diagnosed with one of the cancers excluded skin and thyroid. Location. were range from Europe, US and China. The studies were categorized into insight(18/65), guideline(6/65), care management(22/65), literature review(3/65), recommendation(2/65). There were 15/65 papers that needs more detailed reviews which hopefully can provide some sort of more specific insights.
 
 Risk of bias within studies
 Synthesis of results
