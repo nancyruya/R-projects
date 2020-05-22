@@ -56,3 +56,8 @@ Risk of bias within studies
 Synthesis of results
 Risk of bias across studies
 Additional analysis
+
+----------------------------------------------------------------------------------------------------------------------------
+“COVID-19 Health System Updates”  
+Extract the case numbers in these letters, and make a time-series graph for the # of COVID-19-positive patients in our hospitals, # of patients in our ICUs, # of inpatients under investigation (PUIs)  
+At one point, the letter also give the # of PPEs , # of hospital beds, # of ventilators.   
