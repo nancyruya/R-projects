@@ -53,37 +53,42 @@ What are the risk factors for patients with dual cancer and COVID-19?"
 > From high importance to low importance: Clinical -> ... ->  Opinion -> Management
 
 # Linear Regression
-http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Correlation-Regression/BS704_Correlation-Regression2.html
+http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Correlation-Regression/BS704_Correlation-Regression2.html  
 
-Crude Model
-Y(AllMortAdj)=f(ATFRegWeapon)
-Adjusted model
-Y(AllMortAdj)=f(ATFRegWeapon, Poverty, Unemploy, PoorMH0,PoorMH14ls, PoorMH14gt, StPoP)
+Crude Model  
+Y(AllMortAdj)=f(ATFRegWeapon)  
+Adjusted model  
+Y(AllMortAdj)=f(ATFRegWeapon, Poverty, Unemploy, PoorMH0,PoorMH14ls, PoorMH14gt, StPoP)  
 
-REGRESSION DIAGNOSTICS
-http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R5_Correlation-Regression/index.html
-https://stats.idre.ucla.edu/stata/webbooks/reg/chapter2/stata-webbooksregressionwith-statachapter-2-regression-diagnostics/
-http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R5_Correlation-Regression/R5_Correlation-Regression7.html
-https://data.library.virginia.edu/diagnostic-plots/
+REGRESSION DIAGNOSTICS  
+http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R5_Correlation-Regression/index.html  
+https://stats.idre.ucla.edu/stata/webbooks/reg/chapter2/stata-webbooksregressionwith-statachapter-2-regression-diagnostics/  
+http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R5_Correlation-Regression/R5_Correlation-Regression7.html  
+https://data.library.virginia.edu/diagnostic-plots/  
  
-exploratory data analysis
-https://cran.r-project.org/web/packages/dlookr/index.html
-https://cran.r-project.org/web/packages/dlookr/vignettes/EDA.html
+exploratory data analysis  
+https://cran.r-project.org/web/packages/dlookr/index.html  
+https://cran.r-project.org/web/packages/dlookr/vignettes/EDA.html  
  
-https://stats.idre.ucla.edu/r/seminars/introduction-to-regression-in-r/
+https://stats.idre.ucla.edu/r/seminars/introduction-to-regression-in-r/  
  
-http://r-statistics.co/Linear-Regression.html
+http://r-statistics.co/Linear-Regression.html  
  
-https://rpkgs.datanovia.com/ggpubr/reference/stat_regline_equation.html
+https://rpkgs.datanovia.com/ggpubr/reference/stat_regline_equation.html  
 
-# GWR
-https://rpubs.com/adam_dennett/44975
-https://rspatial.org/raster/analysis/6-local_regression.html
-https://crd230.github.io/gwr.html
-http://geog.uoregon.edu/bartlein/courses/geog495/lec07.html
-https://rspatial.org/
+# GWR 
+https://rpubs.com/adam_dennett/44975  
+https://rspatial.org/raster/analysis/6-local_regression.html  
+https://crd230.github.io/gwr.html  
+http://geog.uoregon.edu/bartlein/courses/geog495/lec07.html  
+https://rspatial.org/  
  
  
-https://cran.r-project.org/web/packages/spgwr/vignettes/GWR.pdf
-https://cran.r-project.org/web/packages/GWmodel/GWmodel.pdf
-http://gwr.maynoothuniversity.ie/
+https://cran.r-project.org/web/packages/spgwr/vignettes/GWR.pdf  
+https://cran.r-project.org/web/packages/GWmodel/GWmodel.pdf  
+http://gwr.maynoothuniversity.ie/  
+
+# Conda
+conda info --envs  
+conda activate  
+jupyter notebook  
