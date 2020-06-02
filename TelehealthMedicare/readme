@@ -1,0 +1,13 @@
+looking at changes of telehealth use among Medicare beneficiaries, which is under rapid change due to COVID-19. 
+2017 data for now
+ 
+ 
+https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/fs4p-t5eq/data  
+
+Medicare Provider Utilization and Payment Data: Physician and Other Supplier PUF CY2017.
+The original data is too big to download, so it’s better to subset by selecting/filter with specified HCPCS codes. 
+LIST OF MEDICARE TELEHEALTH SERVICES
+CY 2017
+
+ 
+https://pubmed.ncbi.nlm.nih.gov/31759960/
