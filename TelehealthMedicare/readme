@@ -11,3 +11,34 @@ CY 2017
 
  
 https://pubmed.ncbi.nlm.nih.gov/31759960/
+
+----------------
+summary statistic, mean, standard deviation, median, interquartile range (25th and 75th percentile, min, max
+
+get density
+
+numerator, service
+adjust for population,
+if state have more Medicare pt., need more services,
+get data for state level Medicare population
+ 
+public use file
+
+summary statistic, mean, standard deviation, median, interqutile range, normal range
+download: state/county table all beneficiaries
+
+telehealth for part a and part b 
+
+total state number part a and part b in denominator
+
+rate of telemeds use is 1.83 per 1000 beneficiaries: total service in CA / by total number beneficiaries with part a and part b * 1000 : for every 1000 enrolle they use 1.8 services on 2017
+
+extract county is state total, in different states, extract , I want number in D column:
+excel: state, count (state total), FFS (part A and B)-fee for service
+and merge services as telemeds sum, merge by state, calculate “Rate”,
+
+could map these, box plot, regression…
+
+generate map base on rate , chropleth map in R, tidycensus R 
+
+CMS…
