@@ -42,3 +42,24 @@ could map these, box plot, regression…
 generate map base on rate , chropleth map in R, tidycensus R 
 
 CMS…
+-------------------------
+Df$rate <- df[,3]/df[,4]
+Df$rate <- df$NumberServices/df$Beneficiaries
+
+Tmap R packages   cran.r-project.org/web/packages/tmap…tmap-getstarted.html
+
+Get the shap file ,  need library, add date, map them, merge state
+
+Tweak 
+
+
+
+Map using quartiles, change to different levels
+
+Each state how many unique NPI is there,  NYS 100 unique, NJ? 
+Unique NPI/total service (FFS pop)
+Column numberMD
+MDPerFFS
+
+Same doctor in different location,
+Sum by unique npi     aggregate in state level,unique NPI
