@@ -46,16 +46,17 @@ CMS…
 Df$rate <- df[,3]/df[,4]
 Df$rate <- df$NumberServices/df$Beneficiaries
 
-Tmap R packages   cran.r-project.org/web/packages/tmap…tmap-getstarted.html
+Tmap R packages
+https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html
 
-Get the shap file ,  need library, add date, map them, merge state
+Get the shap file ,  need library, add data, map them, merge state
 
-Tweak 
+Tweak a little bit from my previous way
 
 
+Map using quantiles, change to different levels
 
-Map using quartiles, change to different levels
-
+Moving forward:
 Each state how many unique NPI is there,  NYS 100 unique, NJ? 
 Unique NPI/total service (FFS pop)
 Column numberMD
