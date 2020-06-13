@@ -61,6 +61,3 @@ Each state how many unique NPI is there,  NYS 100 unique, NJ?
 Unique NPI/total service (FFS pop)
 Column numberMD
 MDPerFFS
-
-Same doctor in different location,
-Sum by unique npi     aggregate in state level,unique NPI
