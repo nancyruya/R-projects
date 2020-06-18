@@ -61,3 +61,47 @@ Each state how many unique NPI is there,  NYS 100 unique, NJ?
 Unique NPI/total service (FFS pop)
 Column numberMD
 MDPerFFS
+-------------------------
+In future: 
+ In paper, we may change the lable as percentile.
+ May do an regression in state level, density rate, how it represent social economic of state.
+ 
+idea: Census Bureau; Prefix, survey give percentage of population having diabetes, tide to service
+Eg. One service map is smoking cessation, tide to population smoker, positive correlation? And service that used?
+What variable to include? Download data, similar to gun violence study. 
+Separately by the services: E service code, group them, summarize them, etc.
+State level variation or change from 2016 to 2017, to...
+Currently focus on geographic, not able to do time trend since no data for 2018 after.
+
+
+Todo:
+2016 dataset
+Append/stack the data, column combine, stack them, two map one is 2016 and one 2017 side by side.    Put two graph in one 
+
+Write up how I did the 2016. (see previous paper)
+https://www.sciencedirect.com/science/article/abs/pii/S0012369219342230?via%3Dihub
+where I get from denominator and numerator, interpret result 
+if interesting variable could be added to regression. 
+
+Grid package
+Bookdown.org/rdpeng/RProgDA/the-grid-package.html
+
+Gtable package
+
+Ggpubr
+Rpkgs.datanovia.com/ggpubr
+
+https://cran.r-project.org/web/packages/gridExtra/vignettes/gtable.html
+
+Dr. Coakley:
+I will take a look and after that I will send to Dr. Liu for further review.
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
