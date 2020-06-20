@@ -92,11 +92,103 @@ Ggpubr
 Rpkgs.datanovia.com/ggpubr
 
 https://cran.r-project.org/web/packages/gridExtra/vignettes/gtable.html
+-------------------------
+2016 dataset process:
+Data was obtained from:
+https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Geographic-Variation/GV_PUF, downloaded file: state/county table-all beneficiaries(ZIP)
+The data included state-county 2007 to 2018 in different tabs, deleted all other tabs but kept the year of 2016
+In 2016 tab, only kept 4 columns: State, County, State and COunty FIPS Code, and Beneficiaries with Part A and Part B and saved as StateCountyFFS2016.csv
 
-Dr. Coakley:
-I will take a look and after that I will send to Dr. Liu for further review.
+Telehealth_Services_April 30 2020 excel file from sinai box:  https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/PFS-Federal-Regulation-Notices-Items/CMS-1631-FC
+LIST OF MEDICARE TELEHEALTH SERVICES 	
+CY 2016	
+Code	Short Descriptor
+90791	Psych diagnostic evaluation
+90792	Psych diag eval w/med srvcs
+90832	Psytx pt&/family 30 minutes
+90833	Psytx pt&/fam w/e&m 30 min
+90834	Psytx pt&/family 45 minutes
+90836	Psytx pt&/fam w/e&m 45 min
+90837	Psytx pt&/family 60 minutes
+90838	Psytx pt&/fam w/e&m 60 min
+90845	Psychoanalysis
+90846	Family psytx w/o patient
+90847	Family psytx w/patient
+90951	Esrd serv 4 visits p mo <2yr
+90952	Esrd serv 2-3 vsts p mo <2yr
+90954	Esrd serv 4 vsts p mo 2-11
+90955	Esrd srv 2-3 vsts p mo 2-11
+90957	Esrd srv 4 vsts p mo 12-19
+90958	Esrd srv 2-3 vsts p mo 12-19
+90960	Esrd srv 4 visits p mo 20+
+90961	Esrd srv 2-3 vsts p mo 20+
+90963	Esrd home pt serv p mo <2yrs
+90964	Esrd home pt serv p mo 2-11
+90965	Esrd home pt serv p mo 12-19
+90966	Esrd home pt serv p mo 20+
+96116	Neurobehavioral status exam
+96150	Assess hlth/behave init
+96151	Assess hlth/behave subseq
+96152	Intervene hlth/behave indiv
+96153	Intervene hlth/behave group
+96154	Interv hlth/behav fam w/pt
+97802	Medical nutrition indiv in
+97803	Med nutrition indiv subseq
+97804	Medical nutrition group
+99201	Office/outpatient visit new
+99202	Office/outpatient visit new
+99203	Office/outpatient visit new
+99204	Office/outpatient visit new
+99205	Office/outpatient visit new
+99211	Office/outpatient visit est
+99212	Office/outpatient visit est
+99213	Office/outpatient visit est
+99214	Office/outpatient visit est
+99215	Office/outpatient visit est
+99231	Subsequent hospital care
+99232	Subsequent hospital care
+99233	Subsequent hospital care
+99307	Nursing fac care subseq
+99308	Nursing fac care subseq
+99309	Nursing fac care subseq
+99310	Nursing fac care subseq
+99354	Prolonged service office
+99355	Prolonged service office
+99356	Prolonged service inpatient
+99357	Prolonged service inpatient
+99406	Behav chng smoking 3-10 min
+99407	Behav chng smoking > 10 min
+99495	Trans care mgmt 14 day disch
+99496	Trans care mgmt 7 day disch
+G0108	Diab manage trn  per indiv
+G0109	Diab manage trn ind/group
+G0270	Mnt subs tx for change dx
+G0396	Alcohol/subs interv 15-30mn
+G0397	Alcohol/subs interv >30 min
+G0406	Inpt/tele follow up 15
+G0407	Inpt/tele follow up 25
+G0408	Inpt/tele follow up 35
+G0420	Ed svc ckd ind per session
+G0421	Ed svc ckd grp per session
+G0425	Inpt/ed teleconsult30
+G0426	Inpt/ed teleconsult50
+G0427	Inpt/ed teleconsult70
+G0436	Tobacco-use counsel 3-10 min
+G0437	Tobacco-use counsel>10min
+G0438	Ppps, initial visit
+G0439	Ppps, subseq visit
+G0442	Annual alcohol screen 15 min
+G0443	Brief alcohol misuse counsel
+G0444	Depression screen annual
+G0445	High inten beh couns std 30m
+G0446	Intens behave ther cardio dx
+G0447	Behavior counsel obesity 15m
+G0459	Telehealth inpt pharm mgmt
 
+Physician and Other Supplier Data CY 2016:
+https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/utc4-f9xp/data
 
+Extracted the HCPCS Code MEDICARE TELEHEALTH SERVICES-2016	from the Physician and Other Supplier Data 2016 and save as MedicareAllTelehealth2016.csv
 
 
 
