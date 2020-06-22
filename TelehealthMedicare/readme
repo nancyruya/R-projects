@@ -188,8 +188,16 @@ G0459	Telehealth inpt pharm mgmt
 Physician and Other Supplier Data CY 2016:
 https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/utc4-f9xp/data
 
-Extracted the HCPCS Code MEDICARE TELEHEALTH SERVICES-2016	from the Physician and Other Supplier Data 2016 and save as MedicareAllTelehealth2016.csv
+Extracted the HCPCS Code MEDICARE TELEHEALTH SERVICES-2016 from the Physician and Other Supplier Data 2016 and save as MedicareAllTelehealth2016.csv
 
+Rename:
+National Provider Identifier = NPI
+Credentials of the Provider = Credentials
+Gender of the Provider = Gender
+City of the Provider = City
+State Code of the Provider = State
+Provider Type = ProviderType
+Number of Services = NumberServices
 
 
  
