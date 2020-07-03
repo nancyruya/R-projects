@@ -198,6 +198,37 @@ City of the Provider = City
 State Code of the Provider = State
 Provider Type = ProviderType
 Number of Services = NumberServices
+-----------------------------------
+dfAll wide format: cbind  wide will need rename
+
+subtract 2017 and 2016 services,
+state increase/decrease
+
+spot check for original file 2017 and 17
+same unique ID, see if services change
+eg. dat1 head
+
+same services same provider check why 2017 is less than 2016
+
+
+use 2017 for now
+total service/MD/States
+
+Dat1   unique sum two verible state and uniqueNPI
+
+Total number of services = df All services
+
+Compare median / averiga, show medican in map
+
+Another map: average num services/md by state
+
+Df$ServicePerMD <- df$Service/df$Provider, map it
+
+Scale maybe quantile quentile,
+
+Generate 3rd map and put them in word 
+How change scale quantile different version..  cant see too much of variation btn state, gradient of color… see if there’s more contract
+2016
 
 
  
