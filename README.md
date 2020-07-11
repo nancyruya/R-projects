@@ -92,3 +92,20 @@ http://gwr.maynoothuniversity.ie/
 conda info --envs  
 conda activate  
 jupyter notebook  
+---------------
+
+      national-level Mean +- SD  |  Median(IQR)  |   Min to Max   | 
+2016  Telehealth services per Provider
+      Telehealth servicies per FFS beneficiaries
+      Provider per FFS beneficiaries
+      telehealth Services
+      provider
+      FFS
+2017
+
+2017-2016
+
+Q1 and Q3
+
+
+sciencedirect.com/science/article/pii/S0012369219342230?via%3Dihub#tbl1
