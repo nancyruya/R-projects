@@ -229,9 +229,67 @@ Scale maybe quantile quentile,
 Generate 3rd map and put them in word 
 How change scale quantile different version..  cant see too much of variation btn state, gradient of color… see if there’s more contract
 2016
+-----------------------
+
+ 5 main finding
+graph 2: different positive negative color with boundary black color
+
+spedf
+
+check pattern random or not spatially
+
+rgdal -> manipulate spatial data
+spdep ->spatial analysis
+spatial data, tells lat/long
+
+randomly distributed or not
+
+spatial random or not?
+VarX=ServicePerFFS, ProviderPerFFS, ServicePerProvider…(6variables)
+Moran.test(mnb.df@ServicePerFFS, listw=mnb2, zero.policy=T)  pvalue
+Moran.test(mnb.df@ProviderPerFFS, listw=mnb2, zero.policy=T)
+
+Moran.test(mnb.df@ServicePerProvider, listw=mnb2, zero.policy=T)
+…
+
+or
+
+Permutation test
+Moran.mc(
+
+Google: Global Moran mean
+
+Where people specific located, lung screening, geocode provider address, more detail info if provider in rural/city, service costs…
+
+library(rgdal)
+library(spdep)
+ 
+#library(rgdal) for importing shape file
+#shape file is from the Census
+#https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
+mnb <- readOGR("cb_2018_us_state_500k.shp")
+mnb <- subset(mnb,!(mnb$STUSPS %in% c("AK","HI","AS","GU","MP","PR","VI")))
+#import data file
+dat0 <- read.csv("acsState18_agesex.csv")
+dat0 <- subset(dat0, !(dat0$stabb %in% c("AK","HI")))
+#add varXs in to the spatial frame for contiguous US only
+mnb.df <- merge(mnb, dat0, by.x="STUSPS",by.y="stabb", all.x=T)
+ 
+#construct neighbors List
+mnb1 <- poly2nb(mnb.df)
+#generate spatial Weights; can change style to others, B,C,S..
+mnb2 <- nb2listw(mnb1, style="W", zero.policy=TRUE)
+#visualize neighbors
+plot(mnb2,coords=coordinates(mnb),pch=19, cex=0.1, col="gray")
+ 
+#test global Moran for varX=total population
+moran.test(mnb.df$MFtot, listw=mnb2, zero.policy=T)
+#could also do a Permutation test
+moran.mc(mnb.df$MFtot, mnb2, nsim=999)
+ 
+##In the above example, total population across the 49 states (48+DC) did not show autocorrelation, p=0.3857 or p=0.346.
 
 
- 
  
  
  
