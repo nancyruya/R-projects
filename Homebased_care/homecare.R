@@ -74,6 +74,57 @@ length(unique(dat0a$HCPCSgp))
 HCPCSgp18 <- as.data.frame(aggregate(NumberServices ~ HCPCSgp, dat0a, sum))
 HCPCSgp18$year <- "2018"
 
-==========
+############################
+# read dataset from CMS for medicare benificiaries
+dat0b <- read.csv("StateOver65FFS2018.csv")
+names(dat0b) <- c("State","FIPS","FFS")
+dat0b$FFS <- suppressWarnings(as.numeric(as.character(dat0b$FFS)))
+# State Total FFS population
+#FFSstate <- select(filter(dat0b, County == "STATE TOTAL"), c(State, FFS) )
+# gsub the State: remove value in parenthesis
+dat0b$State <- gsub('\\([^()]*\\)','',dat0b$State)
+dat0b$State <- gsub("[[:space:]]", "", dat0b$State)
+# merge is a function in dplyr package, this merge reduced from 55 states in telehealth data to 53 states from FFS
+df <- merge(dat0b, eHNPIstate, by = "State", all=TRUE)
+#statepop is from "usmap" 
+#library(usmap)
+##reduce to the 51 states
+df <- merge(statepop, df, by.x="abbr",by.y="State")
 
+df18 <- df
+df18$year <- "2018"
+
+plot_usmap(data = df18, values = "NumberServices", color = "red") + 
+  scale_fill_continuous(name = "telehealth Services (2018)", 
+                        type = "viridis", label = scales::comma) + 
+  theme(legend.position = "right")
+
+####################
+df18$eHperFFS <- round(df$NumberServices/df$FFS,2)
+df18$eHperNPI <- round(df$NumberServices/df$unique_NPI,2)
+df18$NPIperFFS <- df$unique_NPI/df18$FFS
+df18$NPIperFFS <- round(df18$NPIperFFS *1000,2)
+
+p1 <-
+plot_usmap(data = df18, values = "eHperFFS", color = "white") +
+  scale_fill_continuous(name = "(a) Services/FFS, 2018",
+                        low="light blue",high="dark blue", label = scales::comma) +
+  theme(legend.position = "right")+
+  theme(plot.margin = unit(c(0,0,0,0), "cm"))
+
+p2 <-
+  plot_usmap(data = df18, values = "eHperNPI", color = "white") +
+  scale_fill_continuous(name = "(b) Services/Provider, 2018", 
+                        low="pink",high="red", label = scales::comma) +
+  theme(legend.position = "right")+
+  theme(plot.margin = unit(c(0,0,0,0), "cm"))
+
+p3 <-
+  plot_usmap(data = df18, values = "NPIperFFS", color = "white") +
+  scale_fill_continuous(name = "(c) Providers/1000 FFS, 2018", 
+                        low="light green",high="dark green", label = scales::comma) +
+  theme(legend.position = "right")+
+  theme(plot.margin = unit(c(0,0,0,0), "cm"))
+
+grid.arrange(p1, p2, p3, ncol =1)
 
