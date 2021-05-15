@@ -78,7 +78,10 @@ HCPCSgp18$year <- "2018"
 # read dataset from CMS for medicare benificiaries
 dat0b <- read.csv("StateOver65FFS2018.csv")
 names(dat0b) <- c("State","FIPS","FFS")
-dat0b$FFS <- suppressWarnings(as.numeric(as.character(dat0b$FFS)))
+# table(dat0b$State)
+# dat0b <- dat0b[-1, ] #first line is for National
+dat0b <- subset(dat0b, is.na(dat0b$FIPS)==F) 
+dat0b$FFS <- as.numeric(as.character(dat0b$FFS))
 # State Total FFS population
 #FFSstate <- select(filter(dat0b, County == "STATE TOTAL"), c(State, FFS) )
 # gsub the State: remove value in parenthesis
@@ -95,15 +98,14 @@ df18 <- df
 df18$year <- "2018"
 
 plot_usmap(data = df18, values = "NumberServices", color = "red") + 
-  scale_fill_continuous(name = "telehealth Services (2018)", 
+  scale_fill_continuous(name = "Homebase Care Services (2018)", 
                         type = "viridis", label = scales::comma) + 
   theme(legend.position = "right")
 
 ####################
 df18$eHperFFS <- round(df$NumberServices/df$FFS,2)
 df18$eHperNPI <- round(df$NumberServices/df$unique_NPI,2)
-df18$NPIperFFS <- df$unique_NPI/df18$FFS
-df18$NPIperFFS <- round(df18$NPIperFFS *1000,2)
+df18$NPIperFFS <- round((df$unique_NPI/df$FFS) *1000,2)
 
 p1 <-
 plot_usmap(data = df18, values = "eHperFFS", color = "white") +
@@ -128,3 +130,15 @@ p3 <-
 
 grid.arrange(p1, p2, p3, ncol =1)
 
+##### county level
+##### unique(NPI, address1, city, zip, state); column (A, H, I, J, K, L, M)
+##### column (A, H, I, J, K, L, M)
+# unique variable combinations in R
+
+# https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/census-geocoder.html
+# upload unique date and dr. liu do geograph
+
+
+
+
+##### 
