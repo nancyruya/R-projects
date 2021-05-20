@@ -131,6 +131,12 @@ p3 <-
 grid.arrange(p1, p2, p3, ncol =1)
 
 ##### county level
+dat0a = n_distinct(dat0a$NPI, dat0a$StAddress1,dat0a$StAddress2,dat0a$City, dat0a$Zip, dat0a$State, dat0a$Country)
+uniquenpi <- summarize(group_by(dat0a, NPI), unique_StAddress1 = n_distinct(StAddress1))
+
+unique <- dat0a %>% distinct(NPI, StAddress1, StAddress2, City, Zip, State, Country)
+count(unique)
+
 ##### unique(NPI, address1, city, zip, state); column (A, H, I, J, K, L, M)
 ##### column (A, H, I, J, K, L, M)
 # unique variable combinations in R
